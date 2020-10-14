@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <script>
+            /*
+            //1. En base al numero ingresado calcular si una persona puede conducir
+            var edad = prompt("Ingrese su edad: ")
+            if (edad>18){
+                console.log("Puede manejar")
+                alert("Usted puede manejar")
+                document.write("<h1>Puede manejar</h1>")
+            } else {
+                document.write("<h1>NO puede manejar</h1>")
+            }
+            */
+            /*2. Pide una nota (numero). Muestra la calificacion segun la nota
+            0-3: Muy deficiente
+	        3-5: Insuficiente
+	        5-6: Suficiente
+	        6-7: Bien
+	        7-9: Notable
+	        9-10: Sobresaliente */
+
+            /*
+            var nota = prompt("Ingrese la nota: ")
+            if (nota>= 0 && nota<3) {
+                alert("Muy deficiente")
+            } else if (nota>=3 && nota<5){
+                alert("Insuficiente")
+            } else if (nota>=5 && nota<6){
+                alert("Suficiente")
+            } else if(nota>=6 && nota<7){
+                alert("Bien")
+            } else if(nota>=7 && nota<9){
+                alert("Notable")
+            } else if(nota>=9 && nota<10){
+                alert("Sobresaliente")
+            } else {
+                alert("Nota mal ingresada")
+            } */
+            /* 5. Un script que escriba los números del 1 al 500, que indique cuales
+            son múltiplos de 4 y de 9 y que cada 5 líneas muestre una línea
+            horizontal. Por ejemplo :
+
+            1
+            2
+            3
+            4 (Múltiplo de 4)
+            5-
+            */
+            
+            /* for(var i = 1; i<500; i++){
+                document.write(i)
+                if(i % 4 == 0) {
+                    document.write(" es multiplo de 4")
+                }if(i % 5 == 0){
+                    document.write("<hr>")
+                }if(i % 9 == 0){
+                    document.write(" es multiplo de 9")
+                }
+                document.write("<br>")
+            }
+            */
+            /*
+            4. Crea script para generar pirámide siguiente con los números del 1
+            al número que indique el usuario (no mayor de 50) :
+
+            1
+            12
+            123
+            1234
+            12345
+            123456
+            */
+
+            /*
+            var num = prompt("Ingrese un número")
+            if(num <=50){
+                for (var i=1;i<=num;i++){
+                for(var j=1;j<=i;j++){
+                    document.write(j)
+                }
+                document.write("<br>")
+            }
+            } else {
+                document.write("El numero ingresado no es correcto")
+            }
+            */
+            /*
+            8. Realiza un script que cuente el número de vocales que tiene un texto.
+            */
+            /*
+            var texto = prompt("Ingrese un texto: ")
+            var caracter
+            var cont = 0
+            for(var i=0;i<=texto.length;i++){
+                caracter = texto.charAt(i)
+                caracter = caracter.toLowerCase()
+                if(caracter == "a" || caracter == "e" || caracter == "i" || caracter == "o" || caracter == "u"){
+                    cont = cont + 1
+                }
+            }
+            document.write(cont)
+            */
+            /*Crear un programa que determine si un número introducido en un Prompt es par o no, la respuesta será mostrada en una alerta.
+
+Crear un programa que determine si un número introducido en un Prompt es divisible por 5 o no, mostrar el resultado con console.log
+
+Crear un programa que determine si un número introducido en un popup es divisible por 11 y 5 o no, mostrar el resultado con console.log
+*/
+            var numero = prompt("Ingrese un numero : ")
+            if(numero % 11 == 0 && numero % 5 == 0) {
+                console.log("El numero " + numero + " es divisible por 11 y 5")
+            } else {
+                console.log("El numero " + numero + " no es divisible por 11 y 5")
+            }
+        </script>
+    </body>
+</html>
